@@ -73,17 +73,8 @@ Route::get( 'paises' , function(){
 
     ];
 
-foreach($paises as $nombrepais => $pais){
-
-    echo "<h1>$nombrepais</h1>";
-    echo"<pre>";
-    print_r($pais["Moneda"]);
-    echo "<br>";
-    print_r($pais["Poblacion"]);
-    echo"</pre>";
-    echo "<hr />";
-
-}
+    //comvocar vistas
+    return view("paises")->with("naciones", $paises);
 
 });
 
