@@ -78,6 +78,14 @@ Route::get( 'paises' , function(){
 
 });
 
+Route::get('Formulario_buscador', "MetabuscadorController@Formulario_buscador");
+Route::post('Buscar', "MetabuscadorController@Buscar");
+
+
+
+
+
+
 
 
 
